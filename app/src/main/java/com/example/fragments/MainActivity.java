@@ -31,10 +31,7 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = ((NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment)).getNavController();
         NavigationUI.setupWithNavController(binding.navView, navController);
         NavigationUI.setupWithNavController(binding.toolbar, navController, appBarConfiguration);
-
-
-        navController = ((NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment)).getNavController();
-        NavigationUI.setupWithNavController(binding.toolbar, navController, appBarConfiguration);
+        NavigationUI.setupWithNavController(binding.bottomNavView, navController);
 
     }
     }
